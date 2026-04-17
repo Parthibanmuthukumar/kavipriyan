@@ -22,7 +22,6 @@ function About() {
                   <h4 style={{ color: 'var(--foreground)', fontSize: '1.2rem' }}>B.E. Electronics & Communication Engineering</h4>
                   <p style={{ color: 'var(--primary)', fontFamily: 'var(--font-mono)', margin: '0.25rem 0' }}>2023 – 2027</p>
                   <p style={{ margin: 0 }}>St. Joseph’s College of Engineering</p>
-                  <p style={{ color: 'var(--foreground)', fontWeight: 'bold', marginTop: '0.5rem' }}>CGPA: 8.08%</p>
                 </div>
 
                 <div className="glass-card" style={{ position: 'relative' }}>
@@ -30,7 +29,6 @@ function About() {
                   <h4 style={{ color: 'var(--foreground)', fontSize: '1.2rem' }}>HSLC</h4>
                   <p style={{ color: 'var(--primary)', fontFamily: 'var(--font-mono)', margin: '0.25rem 0' }}>2022 – 2023</p>
                   <p style={{ margin: 0 }}>Sri Vidhya Mandhir Higher Secondary School</p>
-                  <p style={{ color: 'var(--foreground)', fontWeight: 'bold', marginTop: '0.5rem' }}>Percentage: 81.5%</p>
                 </div>
 
                 <div className="glass-card" style={{ position: 'relative' }}>

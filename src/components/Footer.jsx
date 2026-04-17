@@ -3,8 +3,8 @@ import { Github, Linkedin, Instagram } from './Icons';
 
 function Footer() {
   return (
-    <footer style={{ padding: '3rem 0', borderTop: '1px solid var(--border)', marginTop: '4rem', background: 'var(--card)' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
+    <footer style={{ padding: '2rem 0', borderTop: '1px solid var(--border)', marginTop: 'auto', background: 'var(--card)', paddingBottom: 'calc(2rem + env(safe-area-inset-bottom))' }}>
+      <div className="container footer-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
         <div>
           <p style={{ margin: 0, fontFamily: 'var(--font-mono)' }}>© {new Date().getFullYear()} Kavi Priyan G. All rights reserved.</p>
         </div>

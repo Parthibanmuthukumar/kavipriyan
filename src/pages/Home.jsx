@@ -1,6 +1,7 @@
 import { ArrowRight, Download, Award, Cpu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import '../index.css';
+import profilePic from '../assets/kavi.jpeg';
 
 function Home() {
   const projects = [
@@ -30,9 +31,10 @@ function Home() {
   return (
     <div className="page-enter">
       {/* Hero Section */}
-      <section style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', paddingTop: '2rem' }}>
+      <section style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', paddingTop: '3rem', paddingBottom: '2rem' }}>
         <div className="container">
-          <div style={{ maxWidth: '900px', textAlign: 'left' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '3rem', flexWrap: 'wrap-reverse' }}>
+            <div style={{ maxWidth: '700px', textAlign: 'left' }}>
             
             {/* Pill Badge */}
             <div style={{ 
@@ -44,7 +46,7 @@ function Home() {
               color: 'var(--primary)', 
               fontFamily: 'var(--font-mono)', 
               fontSize: '0.875rem', 
-              marginBottom: '2rem',
+              marginBottom: '1.5rem',
               letterSpacing: '0.05em',
               textTransform: 'uppercase',
               fontWeight: 'bold'
@@ -67,13 +69,17 @@ function Home() {
             </p>
             
             {/* Navigation Buttons Row */}
-            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', marginBottom: '4rem' }}>
+            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
               <a href="/resume.pdf" target="_blank" className="btn btn-primary" download style={{ padding: '0.875rem 2.5rem', borderRadius: '999px', fontSize: '0.9rem' }}>
                 Download Resume
               </a>
              
               <Link to="/about" className="btn btn-secondary" style={{ padding: '0.875rem 2.5rem', borderRadius: '999px', border: '2px solid var(--border)', fontSize: '0.9rem' }}>
                 View Skills
+              </Link>
+
+              <Link to="/contact" className="btn btn-secondary" style={{ padding: '0.875rem 2.5rem', borderRadius: '999px', border: '2px solid var(--border)', fontSize: '0.9rem' }}>
+                Contact Me
               </Link>
             </div>
             
@@ -92,7 +98,16 @@ function Home() {
                 <p style={{ margin: 0, fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--foreground)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Hardware <span style={{ color: 'var(--primary)' }}>@ Nanozenix</span></p>
               </div>
             </div>
+            </div>
 
+            {/* Image Section */}
+            <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '0 auto', paddingBottom: '2rem' }}>
+              <img 
+                src={profilePic} 
+                alt="Kavi Priyan G." 
+                className="hero-image"
+              />
+            </div>
           </div>
         </div>
       </section>
