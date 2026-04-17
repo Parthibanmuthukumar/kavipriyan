@@ -12,9 +12,14 @@ function Contact() {
     e.preventDefault();
     setStatus('sending');
 
-    emailjs.sendForm('service_61fbkbj', 'template_6psbnw8', formRef.current, {
-      publicKey: 'sCDZ3u1SA5b-3hn7L',
-    })
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formRef.current,
+      {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      }
+    )
       .then((result) => {
           setStatus('success');
           formRef.current.reset();
