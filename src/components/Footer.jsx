@@ -11,7 +11,7 @@ function Footer() {
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           <a href="mailto:kavikavipriyan4137@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--foreground)' }}><Mail size={22} /></a>
           <a href="https://www.linkedin.com/in/kavi-priyan-g-b5a3" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--foreground)' }}><Linkedin size={22} /></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--foreground)' }}><Instagram size={22} /></a>
+          <a href="https://www.instagram.com/_ka__vi_07?igsh=cGtiM2djcDFqcTlt" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--foreground)' }}><Instagram size={22} /></a>
           <a href="https://github.com/Kavi8682" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--foreground)' }}><Github size={22} /></a>
         </div>
       </div>
